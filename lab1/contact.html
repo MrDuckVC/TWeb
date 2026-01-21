@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacte - PC Master</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1>PC Master</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Categorii ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#">Procesoare (CPU)</a>
+                            <a href="#">Plăci Video (GPU)</a>
+                            <a href="#">Memorii RAM</a>
+                        </div>
+                    </li>
+
+                    <li><a href="despre.html">Despre Noi</a></li>
+                    <li class="current"><a href="contact.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact-form" class="container">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #2c3e50;">Formular de Contact</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Aveți întrebări? Completați formularul de mai jos.</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Nume și Prenume:</label>
+                <input type="text" name="nume" placeholder="Ex: Ion Popescu" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="email@exemplu.md" required>
+            </div>
+
+            <div class="form-group">
+                <label>Departament:</label>
+                <select name="departament">
+                    <option value="vanzari">Vânzări & Consultanță</option>
+                    <option value="suport">Suport Tehnic</option>
+                    <option value="garantie">Garanție & Retur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Mesaj:</label>
+                <textarea name="mesaj" rows="5" placeholder="Descrieți problema sau cererea dvs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Trimite Mesaj</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>PC Master &copy; 2026. Elaborat de studentul Cunev.</p>
+    </footer>
+
+</body>
+
+</html>
