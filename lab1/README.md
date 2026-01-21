@@ -1,4 +1,5 @@
 # Laborator 1
+
 **Tema**: Conceperea unei aplicații Web. Crearea conținutului Web utilizând HTML, CSS
 
 **Scop**: Crearea conținutului Web utilizând HTML, CSS
