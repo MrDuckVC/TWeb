@@ -19,7 +19,7 @@ require_once 'config/db.php';
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-info" href="index.html">PC MASTER</a>
+            <a class="navbar-brand fw-bold text-info" href="index.php">PC MASTER</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@ require_once 'config/db.php';
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Acasă</a>
+                        <a class="nav-link active" href="index.php">Acasă</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -45,8 +45,8 @@ require_once 'config/db.php';
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="despre.html">Despre Noi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="despre.php">Despre Noi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contacte</a></li>
                 </ul>
             </div>
         </div>
