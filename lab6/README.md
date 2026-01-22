@@ -57,3 +57,86 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laborator 6
+
+**Tema/scopul**: Utilizarea unui CMS sau Framework pentru dezvoltarea unei aplicații Web.
+
+1. Alegeti un CMS sau Framework (JS sau pe oricare script server) pentru dezvoltarea unei aplicatii Web. Motivati alegerea.
+2. Dezvoltati o aplicatie functionala in baza alegerii facute.
+3. Puneti in raport PrintScreen-uri la paginile create. In cazul CMS-ului ilustrati modul de interactiune cu partea administrativa unde ati intervenit pentru adaptari, iar in cazul Framework-ului - citeva secvente de cod creat de voi pe care-l considerati important sau interesant.
+
+Se incarca raportul in format electronic pe else.fcim.utm.md la sarcina respectiva.
+
+Se va prezenta pagina Web la calculator si se va apara laboratorul efectuat.
+
+# 💻 PC Master Shop (Laravel)
+
+Лабораторная работа №6.
+Веб-приложение для магазина компьютерных комплектующих.
+Реализовано на **Laravel 11** с гибридной архитектурой (Blade + API).
+
+## 🚀 Функционал
+- **Публичная часть:** SPA-подход (AJAX загрузка товаров), форма обратной связи.
+- **Админ-панель:** Защищена паролем, полное управление товарами (CRUD), просмотр заявок.
+- **API:** REST API endpoint для получения списка товаров.
+
+## 🛠️ Установка и запуск
+
+Чтобы запустить проект локально, выполните следующие шаги:
+
+### 1. Клонирование и зависимости
+
+Сначала скачайте проект и установите библиотеки PHP (папка vendor):
+
+```bash
+git clone <ссылка-на-твой-репозиторий>
+cd lab6
+composer install
+```
+
+### 2. Настройка окружения
+
+Создайте файл .env из примера:
+
+```bash
+cp .env.example .env
+Откройте файл .env и настройте подключение к вашей базе данных MySQL:
+```
+
+```ini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pcmaster_laravel  # Создайте эту базу в MySQL!
+DB_USERNAME=root              # Ваш логин
+DB_PASSWORD=                  # Ваш пароль
+
+```
+
+### 3. Ключ приложения
+
+Сгенерируйте уникальный ключ шифрования Laravel:
+
+```bash
+php artisan key:generate
+```
+
+### 4. База данных
+
+Запустите миграции (создание таблиц) и сиды (создание админа):
+
+```bash
+php artisan migrate --seed
+```
+
+Эта команда создаст таблицы products, messages и пользователя-админа.
+
+### 5. Запуск
+Запустите локальный сервер:
+
+```bash
+php artisan serve
+```
+
+Сайт будет доступен по адресу: http://127.0.0.1:8000
